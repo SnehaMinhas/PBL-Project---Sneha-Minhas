@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>VisionLens Web</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>VisionLens</h1>
+<p>Digital Eye Power Screening</p>
+
+
+<!-- Instructions -->
+<div id="instructions" class="card">
+
+<h2>Instructions</h2>
+
+<ul>
+<li>Remove glasses</li>
+<li>Keep phone at 40 cm</li>
+<li>Test one eye at a time</li>
+</ul>
+
+<button onclick="startTest()">Start</button>
+
+</div>
+
+
+<!-- Blur Test -->
+<div id="blurTest" class="card hidden">
+
+<h2>Blur Test</h2>
+
+<p>Select darkest image after removing specs</p>
+
+<div class="grid">
+
+<img src="A.png" class="b1" onclick="selectBlur(-6)">
+<img src="A.png" class="b2" onclick="selectBlur(-4)">
+<img src="A.png" class="b3" onclick="selectBlur(-2)">
+<img src="A.png" class="b4" onclick="selectBlur(0)">
+<img src="A.png" class="b5" onclick="selectBlur(2)">
+<img src="A.png" class="b6" onclick="selectBlur(4)">
+
+</div>
+
+</div>
+
+
+<!-- Focus Sweep -->
+<div id="focusSweep" class="card hidden">
+
+<h2>Focus Sweep</h2>
+<p></p>
+<img src="A.png" id="sweepImg">
+
+<p id="sweepText">0 D</p>
+
+<button onclick="startSweep()">Start Sweep</button>
+<button onclick="stopSweep()">Stop</button>
+
+</div>
+
+
+<!-- Chart -->
+<div id="chartTest" class="card hidden">
+
+<h2>Snellen Chart</h2>
+
+<div id="chartLetter"></div>
+
+<input id="chartInput" placeholder="Enter letter">
+
+<br><br>
+
+<button onclick="checkLetter()">Submit</button>
+
+</div>
+
+
+<!-- Result -->
+<div id="result" class="card hidden">
+
+<h2>Result</h2>
+
+<p id="final"></p>
+
+<button onclick="location.reload()">Restart</button>
+
+</div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
