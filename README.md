@@ -37,7 +37,7 @@ The system combines multiple visual testing techniques to improve reliability an
 - OpenCV
 - NumPy
 - Matplotlib
-
+---
 
 ## 📂 Project Structure
 
