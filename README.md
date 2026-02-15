@@ -52,6 +52,8 @@ The system combines multiple visual testing techniques to improve reliability an
 7. Result is displayed and stored.
 
 ---
+## Live Demo
+https://snehaminhas.github.io/PBL-Project---Sneha-Minhas/
 
 ## 📊 Result & Accuracy
 
